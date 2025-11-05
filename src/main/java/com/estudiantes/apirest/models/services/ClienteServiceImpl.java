@@ -34,13 +34,13 @@ public class ClienteServiceImpl implements IClienteService{
 	@Override
 	public Cliente save(Cliente cliente) {
 		// TODO Auto-generated method stub
-		return null;
+		return clienteDao.save(cliente);
 	}
 
 	@Override
 	public void delete(Long id) {
 		// TODO Auto-generated method stub
-		
+		clienteDao.deleteById(id);
 	}
 
 }
